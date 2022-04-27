@@ -1,0 +1,36 @@
+<html>
+
+ <head>
+  <title>pop up</title>
+
+ </head>
+
+ <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+ <form name="popUpForm">
+
+<script type="text/javascript">
+    var queryString = new Array();
+    $(function () {
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        if (queryString["name"] != null && queryString["technology"] != null) {
+            var data = "<u>Values from QueryString</u><br /><br />";
+            data += "<b>Name:</b> " + queryString["name"] + " <b>Technology:</b> " + queryString["technology"];
+            $("#lblData").html(data);
+        }
+    });
+</script>
+
+ </form>
+ </body>
+
+</html>

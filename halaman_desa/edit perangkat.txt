@@ -1,0 +1,20 @@
+UPDATE tbperangkat SET 
+nama='$txtnm', id_jk='$cbojk', tempat_lhr='$txttempat',
+tgl_lhr='$txttgl',id_agama='$cboagama',nap='$txtnap',
+nip='$txtnip',id_jabatan='$cbojbt',pangkat='$txtpangkat',no_pengangkatan='$txtno1',
+tgl_pengangkatan='$txttgl1',no_berhenti='$txtno2',tgl_berhenti='$txttgl2',
+keterangan='$txtket',kd_pendidikan='$cbopendidikan',file_photo='$foto',
+file_name='$name',kode='$txtkdkel' WHERE 1
+
+
+
+INSERT INTO tbperangkat 
+(nama, id_jk, tempat_lhr, tgl_lhr, id_agama, nap, nip, 
+id_jabatan, pangkat, no_pengangkatan, tgl_pengangkatan, 
+no_berhenti, tgl_berhenti, keterangan, kd_pendidikan, 
+file_photo, file_name, kode) 
+VALUES 
+('$txtnm','$cbojk','$txttempat','$txttgl','$cboagama','$txtnap','$txtnip',
+'$cbojbt','$txtpangkat','$txtno1','$txttgl1',
+'$txtno2','$txttgl2','$txtket','$cbopendidikan',
+'$foto','$name','$txtkdkel')

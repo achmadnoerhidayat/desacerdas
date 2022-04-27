@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Judul pada tab browser -->
+    <title>Jarak Dari Merapi</title>
+
+    <link rel="icon" href="../assets/icon/volcano-icon-round32.png">
+    <link rel="stylesheet" href="../assets/css/gh-fork-ribbon.css">
+
+    <!-- Leaflet CSS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <!-- Font-awesome CSS Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Leaflet Locate Control CSS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.css" />
+
+    <!-- Style untuk tampilan peta fullscreen -->
+    <style>
+      html, body, #map {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+      }
+      b {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/anshori/leaflet-jarakdarimerapi">Fork me on GitHub</a>
+      </div>
+    </div>
+
+    <!-- HTML Block untuk menampilkan peta -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript Library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Locate Control Library -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
